@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:personal_finance/screens/transactions_screen.dart';
 
 class PersonalFinance extends StatefulWidget {
   const PersonalFinance({super.key});
@@ -10,6 +11,11 @@ class PersonalFinance extends StatefulWidget {
 class _PersonalFinanceState extends State<PersonalFinance> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Transactions'),
+      ),
+      body: Transactions(),
+    );
   }
 }
